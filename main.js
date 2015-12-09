@@ -1,30 +1,54 @@
 $(document).ready(function () {
     var NUM_OPTIONS = 3;
     
+    //Click event for the small, unopened option
     $(".option").click(function(event){
 	var clickedOpt = $(event.currentTarget);
 	var position = parseInt(clickedOpt.attr("position"));
+	var optionList = $(".option-list > .option");
 
 	console.log("clicked " + position);
 
+	if(clickedOpt.attr("state") === "minimized"){
 	//Move the unclicked options out of the way
-	var optionList = $(".option-list > .option");
-	optionList.each(function(idx, opt) {
-	    var distance = idx === position ? "200px" : "1000px";
-            $(opt).animate({left: distance}, 500);
-	})
+	    optionList.each(function(idx, opt) {
+	        var distance = idx === position ? "200px" : "1000px";
+                $(opt).animate({left: distance}, 500);
+	    })
 
-        setTimeout(function () {
-            //$(".option2").hide();
-            //$(".option3").hide();
-            clickedOpt.animate({
-                width: '900px',
-                left: '300px'
-            });
-            $(".window").animate({
-                "margin-left": '-300px',
-            });
-        }, 500)
+            setTimeout(function () {
+                //$(".option2").hide();
+                //$(".option3").hide();
+                clickedOpt.animate({
+                    width: '900px',
+                    left: '300px'
+                });
+                $(".window").animate({
+                    "margin-left": '-300px',
+                });
+            }, 500)
+
+	    clickedOpt.attr("state", "maximized");
+	}
+	else{
+	    //Animate minimizing the clicked option
+	        $(".window").animate({
+		    "margin-left": '',
+	        });
+	        clickedOpt.animate({
+		    width: '300px',
+		    left: ''
+	        });
+
+	    //Bring back the other options
+	    setTimeout(function(){
+	    optionList.each(function(idx, opt) {
+                $(opt).animate({left: "0px"}, 500);
+	    })
+	    }, 500);
+
+	    clickedOpt.attr("state", "minimized");
+	}
     });
-
+	
 });
