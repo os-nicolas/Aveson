@@ -50,13 +50,14 @@ h1 {
     width: 300px;
     display:inline-block;
     height:100%;
+    vertical-align: top;
 }
 
 .option-list .option .postview{
-    width: 500px;
-    height:100%;
-    background-color:pink;
+    background-color: gray;
+    width: 900px;
     display:inline-block;
+    vertical-align: top;
 }
 
 .window {
@@ -94,20 +95,21 @@ h1 {
     width: 80px;
     color: #fff;
     display:inline-block;
+    vertical-align: top;
     font-size: 1.6em;
+    height:100%;
 }
-.option-sidebar .option-area {
-    transform: translate(-50%, -50%);
-}
+
 .option-sidebar .title {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    vertical-align: middle;
 }
 
 .work-area {
+    vertical-align: top;
     margin: 0 1em 0 100px;
     display:inline-block;
 }
