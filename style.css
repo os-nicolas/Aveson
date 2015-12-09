@@ -27,6 +27,7 @@ h1 {
 .option {
     color: #fff;
     font-size: 2em;
+    overflow:hidden;
 }
 
 .content-wrapper.option-list {
@@ -39,7 +40,6 @@ h1 {
     position: relative;;
     margin: 1em 0.5em;
     width: 300px;
-
     font-size: 1em;
 }
 
@@ -54,6 +54,10 @@ h1 {
     height:100%;
     background-color:pink;
     display:inline-block;
+}
+
+.window {
+    margin-right:-4000px;
 }
 
 .option-area img {
