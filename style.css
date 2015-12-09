@@ -1,0 +1,116 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin: 0; padding: 0;
+    background-color: #fff;
+}
+
+.page-wrapper {
+    position: relative;
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #999;
+    color: #fff;
+}
+
+h1 {
+    margin: 1em 2em;
+    text-align: center;
+}
+.subtitle {
+    display: block;
+    font-size: 0.5em;
+}
+
+.option {
+    color: #fff;
+    font-size: 2em;
+}
+
+.content-wrapper.option-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.option-list .option {
+    position: relative;;
+    margin: 1em 0.5em;
+    width: 300px;
+
+    font-size: 1em;
+}
+
+.option-list .option .preview{
+    width: 300px;
+    display:inline-block;
+    height:100%;
+}
+
+.option-list .option .postview{
+    width: 500px;
+    height:100%;
+    background-color:pink;
+    display:inline-block;
+}
+
+.option-area img {
+    display: block;
+}
+.option-area .number {
+    display: block;
+    text-align: right;
+    padding: 0.5em;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 4em;
+}
+.option-area .title {
+    display: block;
+    text-align: right;
+    padding: 0.5em;
+    font-size: 2em;
+}
+.option-area .action {
+    display: block;
+    text-align: right;
+    padding: 0.5em;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.option-content {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+}
+.option-sidebar {
+    width: 80px;
+    color: #fff;
+    font-size: 1.6em;
+}
+.option-sidebar .option-area {
+    transform: translate(-50%, -50%);
+}
+.option-sidebar .title {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.work-area {
+    margin: 0 1em 0 100px;
+}
+
+.option1 {
+    background-color: #9B30FF;
+}
+.option2 {
+    background-color: #008B45;
+}
+.option3 {
+    background-color: #FF8C00;
+}
