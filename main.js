@@ -12,7 +12,22 @@ $(document).ready(function () {
 	if(clickedOpt.attr("state") === "minimized"){
 	//Move the unclicked options out of the way
 	    optionList.each(function(idx, opt) {
-	        var distance = idx === position ? "200px" : "1000px";
+		var distance = 1000;
+		if(idx !== position){
+		    //Options to the left of the clicked option should fly away to the left,
+		    //options to the right should fly right.
+		    //We find the difference between their indices and divide by the absolute value
+		    //to get positive or negative, and multiply the distance by that. 
+		    var rel_idx = (idx - position);
+		    var sign = rel_idx / Math.abs(rel_idx);
+		    distance *= sign; 
+		}
+		else{
+		    //We can get the "centered" location for the clicked option
+		    //by subtracting one and multiplying by the centered left side position.
+		    distance = (idx - 1) * -200; 		
+		}
+		distance += "px";
                 $(opt).animate({left: distance}, 500);
 	    })
 
