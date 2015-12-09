@@ -114,12 +114,12 @@ h1 {
     display:inline-block;
 }
 
-.option1 {
+.option[position="0"] {
     background-color: #9B30FF;
 }
-.option2 {
+.option[position="1"] {
     background-color: #008B45;
 }
-.option3 {
+.option[position="2"] {
     background-color: #FF8C00;
 }
