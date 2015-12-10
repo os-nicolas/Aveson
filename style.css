@@ -107,8 +107,6 @@ h1 {
 .option-sidebar {
     width: 80px;
     color: #fff;
-    
-    vertical-align: top;
     font-size: 1.6em;
     /*display:inline-block;*/
     display:flex;
@@ -117,13 +115,11 @@ h1 {
 }
 
 .option-sidebar .title {
-    position:relative;
-    top:50%;
     flex: 1 1 auto;
         /*vertical-align:middle;*/ 
     /*translateX(-100%)*/
-    /*-webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg) translateX(-100%);
+    /*-moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg) ;*/
 }
