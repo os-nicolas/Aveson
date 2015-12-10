@@ -34,10 +34,10 @@ $(document).ready(function () {
             setTimeout(function () {
                 //$(".option2").hide();
                 //$(".option3").hide();
-                var distance = (position - 1) * -300;
+                var distance = (position - 1) * -316;
                 distance += "px";
                 clickedOpt.animate({
-                    width: '900px',
+                    width: '932px',
                     left: distance
                 });
                 $(".window").animate({
