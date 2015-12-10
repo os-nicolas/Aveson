@@ -61,10 +61,10 @@ $(document).ready(function () {
             setTimeout(function(){
                 optionList.each(function(idx, opt) {
                     $(opt).animate({left: "0px"}, 500);
-                })
+                });
+                clickedOpt.attr("state", "minimized");
             }, 500);
 
-            clickedOpt.attr("state", "minimized");
         }
     });
 
