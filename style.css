@@ -62,6 +62,14 @@ h1 {
     transform: translateY(-300px);
 }
 
+.option .infographic{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    transform: translateY(0px);
+}
+
 .option-content{
     background-color: gray;
     width: 900px;
