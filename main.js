@@ -41,7 +41,7 @@ $(document).ready(function () {
                 $(".window").animate({
                     "margin-left": '-300px',
                 });
-            }, 500)
+            }, 700)
 
 	    clickedOpt.attr("state", "maximized");
 	}
@@ -60,7 +60,7 @@ $(document).ready(function () {
 	    optionList.each(function(idx, opt) {
                 $(opt).animate({left: "0px"}, 500);
 	    })
-	    }, 500);
+	    }, 700);
 
 	    clickedOpt.attr("state", "minimized");
 	}
