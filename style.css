@@ -46,22 +46,26 @@ h1 {
     font-size: 1em;
 }
 
-.option-list .option .preview{
+.option-list .option .option-preview{
     width: 300px;
     display:inline-block;
     height:100%;
     vertical-align: top;
 }
 
-.option-list .option .postview{
+.option-content{
     background-color: gray;
     width: 900px;
-    display:inline-block;
+    display:flex;
+    flex-direction: row;
     vertical-align: top;
 }
 
 .window {
     margin-right:-4000px;
+    overflow:hidden;
+    display:flex;
+    flex-direction: row;
 }
 
 .option-area img {
@@ -88,38 +92,33 @@ h1 {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.option-content {
-}
-
 .option-sidebar {
     width: 80px;
     color: #fff;
     display:inline-block;
     vertical-align: top;
     font-size: 1.6em;
-    height:100%;
+    display: table;
 }
 
 .option-sidebar .title {
+    display: table-cell;
+    vertical-align: middle;
     -webkit-transform: rotate(-90deg) translateX(-100%);
     -moz-transform: rotate(-90deg) translateX(-100%);
     -ms-transform: rotate(-90deg) translateX(-100%);
     -o-transform: rotate(-90deg) translateX(-100%);
-    vertical-align: middle;
 }
 
 .work-area {
-    vertical-align: top;
-    margin: 0 1em 0 100px;
-    display:inline-block;
 }
 
-.option[position="0"] {
+.option[position="0"], .option[position="0"] .option-sidebar {
     background-color: #9B30FF;
 }
-.option[position="1"] {
+.option[position="1"], .option[position="1"] .option-sidebar {
     background-color: #008B45;
 }
-.option[position="2"] {
+.option[position="2"], .option[position="2"] .option-sidebar {
     background-color: #FF8C00;
 }
