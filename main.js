@@ -34,9 +34,11 @@ $(document).ready(function () {
             setTimeout(function () {
                 //$(".option2").hide();
                 //$(".option3").hide();
+                var distance = (position - 1) * -300;
+                distance += "px";
                 clickedOpt.animate({
                     width: '900px',
-                    left: '300px'
+                    left: distance
                 });
                 $(".window").animate({
                     "margin-left": '-300px',
