@@ -41,7 +41,7 @@ $(document).ready(function () {
                 $(".window").animate({
                     "margin-left": '-300px',
                 });
-            }, 500)
+            }, 700)
 
             clickedOpt.attr("state", "maximized");
         }
