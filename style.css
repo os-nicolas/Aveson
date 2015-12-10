@@ -53,12 +53,12 @@ h1 {
     vertical-align: top;
 }
 
-.option[state="minimized"]:hover .infographic{
-    transition: all .5s ease 0;
-    -webkit-transition: all .5s ease 0;
-    -moz-transition: all .5s ease 0;
-    -ms-transition: all .5s ease 0;
-    -o-transition: all .5s ease 0;
+.option[state="minimized"]:hover{ 
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     transform: translateY(-15px);
 }
 
