@@ -25,7 +25,7 @@ $(document).ready(function () {
                 else{
                     //We can get the "centered" location for the clicked option
                     //by subtracting one and multiplying by the centered left side position.
-                    distance = (idx - 1) * -200; 		
+                    distance = (idx - 1) * -316; 		
                 }
                 distance += "px";
                 $(opt).animate({left: distance}, 500);
