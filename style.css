@@ -53,16 +53,13 @@ h1 {
     vertical-align: top;
 }
 
-.option[position="0"][state="minimized"]:hover{
-    box-shadow: 0px 5px 5px #000;
-}
-
-.option[position="1"][state="minimized"]:hover{
-   background-color: #2eba74;
-}
-
-.option[position="2"][state="minimized"]:hover{
-    transform: translateY(-5px);
+.option[state="minimized"]:hover .infographic{
+    transition: all .5s ease 0;
+    -webkit-transition: all .5s ease 0;
+    -moz-transition: all .5s ease 0;
+    -ms-transition: all .5s ease 0;
+    -o-transition: all .5s ease 0;
+    transform: translateY(-15px);
 }
 
 .option-content{
