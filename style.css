@@ -95,22 +95,27 @@ h1 {
 .option-sidebar {
     width: 80px;
     color: #fff;
-    display:inline-block;
+    
     vertical-align: top;
     font-size: 1.6em;
-    display: table;
+    /*display:inline-block;*/
+    /*display:flex;
+    flex-direction: column;*/
+
 }
 
 .option-sidebar .title {
-    display: table-cell;
-    vertical-align: middle;
-    -webkit-transform: rotate(-90deg) translateX(-100%);
-    -moz-transform: rotate(-90deg) translateX(-100%);
-    -ms-transform: rotate(-90deg) translateX(-100%);
-    -o-transform: rotate(-90deg) translateX(-100%);
+    /*flex: 1 1 auto;
+        vertical-align:middle;*/ 
+    /*translateX(-100%)*/
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg) ;
 }
 
 .work-area {
+    margin:20px;
 }
 
 .option[position="0"], .option[position="0"] .option-sidebar {
