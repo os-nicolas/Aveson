@@ -53,6 +53,18 @@ h1 {
     vertical-align: top;
 }
 
+.option[position="0"][state="minimized"]:hover{
+    box-shadow: 0px 5px 5px #000;
+}
+
+.option[position="1"][state="minimized"]:hover{
+   background-color: #2eba74;
+}
+
+.option[position="2"][state="minimized"]:hover{
+    transform: translateY(-5px);
+}
+
 .option-content{
     background-color: gray;
     width: 900px;
