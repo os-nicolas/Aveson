@@ -124,6 +124,8 @@ h1 {
     display: flex;
     -moz-align-items: center;
     -moz-justify-content: center;
+    -ms-align-items: center;
+    -ms-justify-content: center;
     -o-align-items: center;
     -o-justify-content: center;
     -webkit-align-items: center;
