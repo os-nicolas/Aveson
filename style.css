@@ -122,8 +122,14 @@ h1 {
     width: 80px;
     font-size: 2em;
     display: flex;
+    -moz-align-items: center;
+    -moz-justify-content: center;
+    -o-align-items: center;
+    -o-justify-content: center;
     -webkit-align-items: center;
     -webkit-justify-content: center;
+    align-items: center;
+    justify-content: center;
     -webkit-transform: rotate(-90deg) ;
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
